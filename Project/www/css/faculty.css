@@ -1,0 +1,16 @@
+.profile{
+	border: 1px solid green;
+	width:100%;
+	display:block;
+	text-align:center;
+}
+
+.profile img {
+  float:center;
+  height:30%;
+  width:20%;
+}
+
+.profile p{
+	font-size:20px;
+}
