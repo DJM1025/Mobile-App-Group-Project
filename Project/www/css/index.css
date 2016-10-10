@@ -28,11 +28,17 @@ body {
 }
 
 .nav{
-	margin:auto;
-	width: 50%;
+	margin:left;
+	width: 1%;
+	height:100%;
     top:5%;
-    text-align:center;
+    text-align:left;
 	font-size:20px;
+	float:left;
+}
+
+.nav a{
+	background-color:black;
 }
 
 .profile{
@@ -47,8 +53,6 @@ body {
 }
 
 .profile img {
-
-
   float:center;
   height:30%;
   width:20%;
@@ -68,9 +72,10 @@ a:hover, a:active { text-decoration: none; }
 .content{
 	background-color:#FFFFFF;
 	margin:auto;
-	width: 75%;
+	width: 65%;
     top:30%;
-    text-align:center;
+    text-align:left;
+	float:right;
 }
 
 /* Landscape layout (with min-width) */

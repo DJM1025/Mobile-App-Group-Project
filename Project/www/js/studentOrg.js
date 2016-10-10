@@ -50,17 +50,15 @@ var app = {
 	menuOpen = false;
 	menuStyle = "hidden";
 	function menu(){
-		var nav = document.getElementById("nav");
 		if(menuOpen == true){
 			menuOpen = false;
 			menuStyle = "hidden";
-			nav.style.width = "1%";
 		}
 		else{
 			menuOpen = true;
 			menuStyle = "visible";
-			nav.style.width = "25%";
 		}
+		var nav = document.getElementById("nav");
 		nav = nav.getElementsByTagName("li");
 		for(var i = 0; i < nav.length; i++){
 			nav[i].style.visibility = menuStyle;
