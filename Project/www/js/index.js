@@ -47,22 +47,22 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-	menuOpen = false;
-	menuStyle = "hidden";
-	function menu(){
-		var nav = document.getElementById("nav");
-		if(menuOpen == true){
-			menuOpen = false;
-			menuStyle = "hidden";
-			nav.style.width = "1%";
-		}
-		else{
-			menuOpen = true;
-			menuStyle = "visible";
-			nav.style.width = "25%";
-		}
-		nav = nav.getElementsByTagName("li");
-		for(var i = 0; i < nav.length; i++){
-			nav[i].style.visibility = menuStyle;
-		}
+
+//Opens and closes the side navigation menu
+menuOpen = false;
+slideDirection = "slide-out";
+function menu(){
+	var nav = document.getElementsByTagName("a");
+	var content = document.getElementsByClassName("content")[0];
+	if(menuOpen == true){
+		menuOpen = false;
+		slideDirection = "slide-out";
 	}
+	else{
+		menuOpen = true;
+		slideDirection = "slide-in";
+	}
+	for(var i = 0; i < nav.length; i++){
+		nav[i].setAttribute('class', slideDirection);
+	}
+}
